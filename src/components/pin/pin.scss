@@ -1,0 +1,25 @@
+.pin {
+    margin: 15px 10px;
+    border-radius: 16px;
+    background: #999;
+
+    //img {
+        //width: 100%;
+        //height: 100%;
+        //display: block;
+    //}
+
+    &__author {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+.small {
+    grid-row-end: span 26;
+}
+.medium {
+    grid-row-end: span 33;
+}
+.huge {
+    grid-row-end: span 45;
+}
