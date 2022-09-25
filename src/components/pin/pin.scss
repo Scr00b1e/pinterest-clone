@@ -3,23 +3,48 @@
     border-radius: 16px;
     background: #999;
 
-    //img {
-        //width: 100%;
-        //height: 100%;
-        //display: block;
-    //}
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 
     &__author {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
+    }
+    &__icon {
+        margin-right: 15px;
+        border-radius: 50%;
+    }
+    &__name {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &__description {
+        font-size: 20px;
+        display: none;
+    }
+
+    &__img {
+        background-size: cover;
+        background-position: center;
+        border-radius: 16px;
+
+        width: 100%;
+        height: 95%;
+
+        transition: all .3s ease;
+        
+        &:hover {
+            background: rgba( #000000, .7);
+        }
     }
 }
 .small {
-    grid-row-end: span 26;
+    grid-row-end: span 40;
 }
 .medium {
-    grid-row-end: span 33;
+    grid-row-end: span 50;
 }
 .huge {
-    grid-row-end: span 45;
+    grid-row-end: span 70;
 }
