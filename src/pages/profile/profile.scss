@@ -1,0 +1,29 @@
+.profile {
+    padding-top: 130px;
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__title {
+        margin: 20px 0;
+
+        font-size: 26px;
+        font-weight: 700;
+    }
+    &__follow {
+        margin: 20px;
+        display: flex;
+
+        h1 {
+            margin-right: 5px;
+        }
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

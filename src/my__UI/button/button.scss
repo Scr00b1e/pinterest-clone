@@ -1,0 +1,26 @@
+.btn {
+    display: none;
+    padding: 5px 10px;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+
+    border-radius: 15px;
+    border: none;
+    background: rgb(238, 26, 26);
+
+    font-size: 18px;
+    color: #fff;
+
+    &.grey {
+        display: block;
+        position: inherit;
+        margin: 0 5px;
+
+        background: rgb(211, 209, 209);
+        color: #000;
+        opacity: .9;
+    }
+}

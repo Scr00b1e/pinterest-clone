@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Input from '../../my__UI/input/Input'
 import './header.scss'
 
@@ -19,9 +20,11 @@ const Header: React.FC = () => {
         <div className="header__info">
           <img src="./img/notifications.svg" alt="" className='header__svg'/>
           <img src="./img/comment.svg" alt="" className='header__svg'/>
-          <div className="header__profile">
-            <img src="https://via.placeholder.com/50" alt="" className='header__icon'/>
-          </div>
+          <Link to={'/profile'}>
+            <div className="header__profile">
+              <img src="https://via.placeholder.com/50" alt="" className='header__icon'/>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
