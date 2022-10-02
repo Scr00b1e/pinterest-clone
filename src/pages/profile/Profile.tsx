@@ -6,7 +6,7 @@ const Profile: React.FC = () => {
   return (
     <div className='profile'>
         <div className="profile__info">
-            <img src="https://via.placeholder.com/100" alt="" className='profile__icon'/>
+            <img src="https://via.placeholder.com/150" alt="" className='profile__icon'/>
             <h1 className="profile__title">
                 Just Jack
             </h1>
@@ -17,6 +17,12 @@ const Profile: React.FC = () => {
             <div className="profile__buttons">
                 <Button btnClass={'btn grey'} btnText={'Share'}/>
                 <Button btnClass={'btn grey'} btnText={'Edit Profile'}/>
+            </div>
+        </div>
+        <div className="profile__bottom">
+            <div className="profile__tab">
+                <h1 className="profile__created title">Created</h1>
+                <h1 className="profile__saved title">Saved</h1>
             </div>
         </div>
     </div>

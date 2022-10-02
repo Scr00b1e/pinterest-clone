@@ -10,12 +10,16 @@
     &__title {
         margin: 20px 0;
 
-        font-size: 26px;
+        font-size: 32px;
         font-weight: 700;
+    }
+    &__nickname {
+        font-size: 20px;
     }
     &__follow {
         margin: 20px;
         display: flex;
+        font-size: 20px;
 
         h1 {
             margin-right: 5px;
@@ -25,5 +29,18 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    &__bottom {
+        margin-top: 30px;
+    }
+    &__tab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .title {
+            font-size: 22px;
+        }
     }
 }
