@@ -7,6 +7,9 @@
         justify-content: center;
         flex-direction: column;
     }
+    &__icon {
+        border-radius: 50%;
+    }
     &__title {
         margin: 20px 0;
 
@@ -41,6 +44,42 @@
 
         .title {
             font-size: 22px;
+
+            margin: 10px;
+            padding-bottom: 10px;
+
+            border-bottom: 1px #000 solid;
+            cursor: pointer;
+        }
+    }
+    &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+
+        &-item {
+            display: flex;
+            margin: 15px;
+        }
+
+        &-right {
+            width: 80px;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+    &__img {
+        &-1 {
+            width: 100px;
+            height: 160px;
+
+            border-right: 1px #fff solid;
+        }
+        &-2, &-3 {
+            width: 80px;
+            height: 80px;
+        }
+        &-2 {
+            border-bottom: 1px #fff solid;
         }
     }
 }
