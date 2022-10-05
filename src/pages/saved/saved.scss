@@ -1,0 +1,10 @@
+.saved {
+    margin-top: 150px;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 370px);
+        grid-auto-rows: 10px;
+        justify-content: center;
+    }
+}
