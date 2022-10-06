@@ -16,8 +16,8 @@ const Profile: React.FC = () => {
                 <h1>0</h1> <p>following</p>
             </div>
             <div className="profile__buttons">
-                <Button btnClass={'btn grey'} btnText={'Share'}/>
-                <Button btnClass={'btn grey'} btnText={'Edit Profile'}/>
+                <Button btnClass={'btn grey'} btnText={'Share'} onClickBtn={null}/>
+                <Button btnClass={'btn grey'} btnText={'Edit Profile'} onClickBtn={null}/>
             </div>
         </div>
         <div className="profile__bottom">

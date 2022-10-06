@@ -15,7 +15,9 @@ const Header: React.FC = () => {
               </svg>
             </div>
           </Link>
-          <div className="header__text">Main</div>
+          <Link to={'/'}>
+            <div className="header__text">Home</div>
+          </Link>
           <div className="header__text">Create</div>
         </div>
         <Input inputClass='input' inputP='Search...'/>

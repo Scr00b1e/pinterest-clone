@@ -1,34 +1,19 @@
-import axios from 'axios'
 import React from 'react'
-import Pin from '../../components/pin/Pin'
+import { useSelector } from 'react-redux'
+import SavedItem from '../../components/savedItem/SavedItem'
+import { RootState } from '../../redux/store'
 import './saved.scss'
 
-type SavedProps = {
-  img: string
-  type: string
-  id: number
-}
-
 const Saved: React.FC = () => {
-  const [items, setItems] = React.useState([]) 
-
-  const things = items.map((obj: SavedProps) => (
-    <Pin {...obj} key={obj.id}/>
-  ))
-
-  React.useEffect(() => {
-    axios.get('https://632c5cb61aabd837399a579d.mockapi.io/practice/pins')
-    .then((res) => {
-      setItems(res.data)
-    })
-    window.scrollTo(0, 0)
-  }, [])
+  const items = useSelector((state: RootState) => state.pinSlice.subjects)
 
   return (
     <div className='saved'>
       <div className="saved__content">
         {
-          things
+          items.map((obj) => (
+            <SavedItem {...obj} key={obj.id}/>
+          ))
         }
       </div>
     </div>

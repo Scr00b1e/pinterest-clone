@@ -1,31 +1,17 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
 import Button from '../../my__UI/button/Button'
-import { addItem } from '../../redux/slices/pinSlice'
-import './pin.scss'
+import './savedItem.scss'
 
-type PinProps = {
-  type: string
-  img: string
-  id: number
+type SavedItemProps = {
+    type: string
+    img: string
 }
 
-const Pin: React.FC<PinProps> = ({type, img, id}) => {
-  const dispatch = useDispatch()
-
-  const onClickBtn = () => {
-    const item: PinProps = (
-      id,
-      type,
-      img
-    )
-    dispatch(addItem(item))
-  }
-
+export const SavedItem: React.FC<SavedItemProps> = ({ type, img }) => {
   return (
-      <div className={type}>
+    <div className={type}>
           <img src={img} alt="" className='pin__img'/>
-          <Button btnText={'Save'} btnClass={'btn'} onClickBtn={onClickBtn}/>
+          <Button btnText={'Save'} btnClass={'btn'} onClickBtn={null}/>
           <p className="pin__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit obcaecati iste praesentium cum vero maiores quos soluta, repudiandae et, vitae delectus! Quisquam earum perspiciatis minima non facilis aliquid voluptatibus.
           </p>
@@ -41,4 +27,4 @@ const Pin: React.FC<PinProps> = ({type, img, id}) => {
   )
 }
 
-export default Pin
+export default SavedItem

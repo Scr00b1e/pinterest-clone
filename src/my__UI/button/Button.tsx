@@ -4,11 +4,12 @@ import './button.scss'
 type BtnProps = {
     btnClass: string
     btnText: string
+    onClickBtn: any
 }
 
-const Button: React.FC<BtnProps> = ({btnClass, btnText}) => {
+const Button: React.FC<BtnProps> = ({btnClass, btnText, onClickBtn}) => {
     return (
-        <button className={btnClass}>
+        <button className={btnClass} onClick={onClickBtn}>
             {btnText}
         </button>
     )
