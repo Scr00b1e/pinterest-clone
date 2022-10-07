@@ -9,7 +9,7 @@ type SavedItemProps = {
 
 export const SavedItem: React.FC<SavedItemProps> = ({ type, img }) => {
   return (
-    <div className={type}>
+      <div className={type}>
           <img src={img} alt="" className='pin__img'/>
           <Button btnText={'Save'} btnClass={'btn'} onClickBtn={null}/>
           <p className="pin__description">

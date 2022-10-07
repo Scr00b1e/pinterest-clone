@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import Button from '../../my__UI/button/Button'
+import { ItemsProps } from '../../pages/Home'
 import { addItem } from '../../redux/slices/pinSlice'
 import './pin.scss'
 
@@ -14,7 +15,7 @@ const Pin: React.FC<PinProps> = ({type, img, id}) => {
   const dispatch = useDispatch()
 
   const onClickBtn = () => {
-    const item: PinProps = (
+    const item: ItemsProps = (
       id,
       type,
       img

@@ -3,10 +3,11 @@ import React from 'react'
 import Pin from '../components/pin/Pin'
 import './home.scss'
 
-type ItemsProps = {
+export type ItemsProps = {
   id: number
   type: string
   img: string
+  count: number
 }
 
 const Home: React.FC = () => {
