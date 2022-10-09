@@ -32,8 +32,6 @@ export const pinSlice = createSlice({
         }
     },
     minusItem(state: PinInitialState, action: PayloadAction<PinType>) {
-        state.subjects = state.subjects.filter((obj) => obj.id !== action.payload)
-
         const findItem = state.subjects.find((obj) => obj.id === action.payload.id)
 
         if(findItem) {

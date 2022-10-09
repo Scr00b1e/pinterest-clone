@@ -18,7 +18,8 @@ const Pin: React.FC<PinProps> = ({type, img, id}) => {
     const item: ItemsProps = {
       id,
       type,
-      img
+      img,
+      count: 0
     }
     dispatch(addItem(item))
   }

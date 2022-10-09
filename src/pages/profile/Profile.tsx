@@ -1,9 +1,15 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import Button from '../../my__UI/button/Button'
+import { RootState } from '../../redux/store'
 import './profile.scss'
 
 const Profile: React.FC = () => {
+    //redux
+    const item = useSelector((state: RootState) => state.pinSlice.subjects)
+    //react
+
   return (
     <div className='profile'>
         <div className="profile__info">
@@ -28,7 +34,11 @@ const Profile: React.FC = () => {
             <div className="profile__gallery">
                 <Link to={'/saved'}>
                     <div className="profile__gallery-item">
-                        <img src="./img/pins/spidey.png" alt="" className='profile__img-1'/>
+                        {
+                            item.map((obj) => (
+                                <img src={obj.img} key={obj.id} alt="" className='profile__img-1'/>
+                            ))
+                        }
                         <div className="profile__gallery-right">
                             <img src="https://via.placeholder.com/80" alt="" className='profile__img-2'/>
                             <img src="https://via.placeholder.com/80" alt="" className='profile__img-3'/>

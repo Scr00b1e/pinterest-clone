@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from '../../my__UI/button/Button'
-import './savedItem.scss'
 
 type SavedItemProps = {
     type: string
