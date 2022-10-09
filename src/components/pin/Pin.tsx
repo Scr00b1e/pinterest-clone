@@ -15,11 +15,11 @@ const Pin: React.FC<PinProps> = ({type, img, id}) => {
   const dispatch = useDispatch()
 
   const onClickBtn = () => {
-    const item: ItemsProps = (
+    const item: ItemsProps = {
       id,
       type,
       img
-    )
+    }
     dispatch(addItem(item))
   }
 
