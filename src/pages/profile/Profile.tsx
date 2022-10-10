@@ -33,6 +33,22 @@ const Profile: React.FC = () => {
             </div>
             <div className="profile__gallery">
                 <Link to={'/saved'}>
+                    <div className="profile__gallery-item all">
+                        <div className="profile__gallery-images">
+                            {
+                                item.map((obj) => (
+                                    <img src={obj.img} key={obj.id} alt="" className='profile__img-all'/>
+                                ))
+                            }
+                        </div>
+                        <h1 className='profile__gallery-title'>All pins</h1>
+                        <div className="profile__gallery-words">
+                            <p>123 pins</p>
+                            <span>1 h.</span>
+                        </div>
+                    </div>
+                </Link>
+                <Link to={'/saved'}>
                     <div className="profile__gallery-item">
                         {
                             item.map((obj) => (
@@ -45,6 +61,7 @@ const Profile: React.FC = () => {
                         </div>
                     </div>
                 </Link>
+                
             </div>
         </div>
     </div>

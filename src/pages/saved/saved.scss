@@ -7,4 +7,12 @@
         grid-auto-rows: 10px;
         justify-content: center;
     }
+
+    &__title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+
+        margin-bottom: 30px;
+    }
 }

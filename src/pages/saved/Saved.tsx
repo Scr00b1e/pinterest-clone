@@ -9,6 +9,7 @@ const Saved: React.FC = () => {
 
   return (
     <div className='saved'>
+      <h1 className='saved__title'>All pins</h1>
       <div className="saved__content">
         {
           items.map((obj) => (

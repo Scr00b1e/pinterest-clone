@@ -9,6 +9,7 @@
     flex-direction: column;
 
     transition: all .3s ease;
+    object-fit: cover;
 
     &::before {
         content: '';
@@ -99,10 +100,10 @@
     }
 }
 .small {
-    grid-row-end: span 40;
+    grid-row-end: span 50;
 }
 .medium {
-    grid-row-end: span 50;
+    grid-row-end: span 60;
 }
 .huge {
     grid-row-end: span 70;

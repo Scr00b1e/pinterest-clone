@@ -58,9 +58,31 @@
 
         &-item {
             display: flex;
-            margin: 15px;
+            margin: 55px;
 
-            border-radius: 15px;
+            &.all {
+                flex-direction: column;
+            }
+        }
+        &-title {
+            font-size: 26px;
+            font-weight: 700;
+            color: #000;
+
+            margin-top: 30px;
+        }
+        &-words {
+            margin-top: 10px;
+            display: flex;
+
+            p, span {
+                font-size: 20px;
+                color: #000;
+            }
+            span {
+                color: #a9a9a9;
+                margin-left: 10px;
+            }
         }
 
         &-right {
@@ -71,17 +93,34 @@
     }
     &__img {
         &-1 {
-            width: 100px;
-            height: 160px;
+            width: 230px;
+            height: 280px;
 
             border-right: 1px #fff solid;
+            border-bottom-left-radius: 15px;
+            border-top-left-radius: 15px;
+            object-fit: cover;
         }
         &-2, &-3 {
-            width: 80px;
-            height: 80px;
+            width: 130px;
+            height: 140px;
+
+            object-fit: cover;
         }
         &-2 {
             border-bottom: 1px #fff solid;
+            border-top-right-radius: 15px;
+        }
+        &-3 {
+            border-bottom-right-radius: 15px;
+        }
+        &-all {
+            width: 230px;
+            height: 280px;
+
+            object-fit: cover;
+            border-radius: 15px;
+            border: #fff 1px solid;
         }
     }
 }
