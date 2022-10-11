@@ -8,6 +8,7 @@ import './profile.scss'
 const Profile: React.FC = () => {
     //redux
     const item = useSelector((state: RootState) => state.pinSlice.subjects)
+    const count = item.reduce((count: number, item: any) => count + item.count, 0)
     //react
 
   return (
@@ -43,7 +44,7 @@ const Profile: React.FC = () => {
                         </div>
                         <h1 className='profile__gallery-title'>All pins</h1>
                         <div className="profile__gallery-words">
-                            <p>123 pins</p>
+                            <p>{count} pins</p>
                             <span>1 h.</span>
                         </div>
                     </div>
