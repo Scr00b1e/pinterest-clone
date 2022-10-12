@@ -36,9 +36,18 @@
         .btn {
             display: block;
         }
+        .pin__change {
+            opacity: 1;
+        }
         .pin__bottom {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             img {
                 display: block;
+            }
+            a {
+                opacity: 1;
             }
         }
     }
@@ -60,6 +69,17 @@
         display: none;
     }
 
+    &__change {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+
+        opacity: 0;
+        color: #fff;
+        font-size: 22px;
+    }
+
     &__img {
         position: relative;
         background-size: cover;
@@ -76,8 +96,23 @@
 
         position: absolute;
         bottom: 50px;
-        right: 10px;
         z-index: 2;
+        width: 100%;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            opacity: 0;
+            color: #000;
+            padding: 5px 10px;
+
+            border-radius: 5px;
+            background: #fff;
+        }
 
         img {
             width: 30px;

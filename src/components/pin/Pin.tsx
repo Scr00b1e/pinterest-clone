@@ -31,16 +31,24 @@ const Pin: React.FC<PinProps> = ({type, img, id}) => {
   return (
       <div className={type}>
           <img src={img} alt="" className='pin__img'/>
-          <Button 
-          btnText={'Save'} 
-          btnClass={isClicked ? 'btn clicked' : 'btn'} 
-          onClickBtn={onClickBtn}/>
+          <div className="pin__save">
+            <span className="pin__change">
+              Saved
+            </span>
+            <Button 
+            btnText={'Save'} 
+            btnClass={isClicked ? 'btn clicked' : 'btn'} 
+            onClickBtn={onClickBtn}/>
+          </div>
           <p className="pin__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit obcaecati iste praesentium cum vero maiores quos soluta, repudiandae et, vitae delectus! Quisquam earum perspiciatis minima non facilis aliquid voluptatibus.
           </p>
           <div className="pin__bottom">
-            <img src="./img/edit.svg" alt="edit" />
-            <img src="./img/dots.svg" alt="" />
+            <a href="#">image link</a>
+            <div>
+              <img src="./img/edit.svg" alt="edit" />
+              <img src="./img/dots.svg" alt="" />
+            </div>
           </div>
           <div className="pin__author">
             <img src="https://via.placeholder.com/50" alt="" className='pin__icon'/>
