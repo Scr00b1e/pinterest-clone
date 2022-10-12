@@ -29,3 +29,14 @@
         opacity: .9;
     }
 }
+.board {
+    display: none;
+    padding: 5px 10px;
+
+    border-radius: 15px;
+    border: none;
+    background: rgb(238, 26, 26);
+
+    font-size: 22px;
+    color: #fff;
+}
