@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 export type PinType = {
-  id: number
+  id: string
   type: string
   img: string
   count: number
@@ -38,7 +38,7 @@ export const pinSlice = createSlice({
             findItem.count -= 1
         }
       },
-    removeItem (state: PinInitialState, action: PayloadAction<number>) {
+    removeItem (state: PinInitialState, action: PayloadAction<string>) {
         state.subjects = state.subjects.filter((obj) => obj.id !== action.payload)
     },
   },

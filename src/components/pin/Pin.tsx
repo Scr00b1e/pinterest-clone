@@ -8,7 +8,7 @@ import './pin.scss'
 type PinProps = {
   type: string
   img: string
-  id: number
+  id: string
 }
 
 const Pin: React.FC<PinProps> = ({type, img, id}) => {

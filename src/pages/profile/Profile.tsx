@@ -42,26 +42,32 @@ const Profile: React.FC = () => {
                                 ))
                             }
                         </div>
-                        <h1 className='profile__gallery-title'>All pins</h1>
+                        {
+                            count && <>
+                            <h1 className='profile__gallery-title'>All pins</h1>
                         <div className="profile__gallery-words">
                             <p>{count} pins</p>
                             <span>1 h.</span>
                         </div>
-                    </div>
-                </Link>
-                <Link to={'/saved'}>
-                    <div className="profile__gallery-item">
-                        {
-                            item.map((obj) => (
-                                <img src={obj.img} key={obj.id} alt="" className='profile__img-1'/>
-                            ))
+                            </>
                         }
-                        <div className="profile__gallery-right">
-                            <img src="https://via.placeholder.com/80" alt="" className='profile__img-2'/>
-                            <img src="https://via.placeholder.com/80" alt="" className='profile__img-3'/>
-                        </div>
                     </div>
                 </Link>
+                {
+                    //<Link to={'/saved'}>
+                    //<div className="profile__gallery-item">
+                       //{
+                           //item.map((obj) => (
+                               //<img src={obj.img} key={obj.id} alt="" /className='profile__img-1'/>
+                            //))
+                        //}
+                        //<div className="profile__gallery-right">
+                           // <img src="https://via.placeholder.com/80" alt="" className='profile__img-2'/>
+                          //  <img src="https://via.placeholder.com/80" alt="" className='profile__img-3'/>
+                        //</div>
+                   //</div>
+                //</Link>
+                }
                 
             </div>
         </div>

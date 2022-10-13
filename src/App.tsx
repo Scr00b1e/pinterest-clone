@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import { Route, Routes } from 'react-router-dom'
 import Profile from './pages/profile/Profile';
 import Saved from './pages/saved/Saved';
+import PinInfo from './components/pinInfo/PinInfo';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/profile' element={<Profile/>}/>
+          <Route path='/pin/:id' element={<PinInfo/>}/>
           <Route path='/saved' element={<Saved/>}/>
         </Routes>
       </div>

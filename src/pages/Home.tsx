@@ -5,7 +5,7 @@ import Pin from '../components/pin/Pin'
 import './home.scss'
 
 export type ItemsProps = {
-  id: number
+  id: string
   type: string
   img: string
   count: number
